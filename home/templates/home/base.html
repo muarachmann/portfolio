@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Mua Rachmann | {% block title %} {% endblock %}</title>
+
+     <!-- include the site stylesheet -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,900" rel="stylesheet">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/icon-fonts.css' %}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/colors.css' %}">
+	<!-- include the site stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+    <div class="loader-container" id="pre-loader">
+		<div class="loader">
+			<div class="preloader"></div>
+		</div>
+	</div>
+
+        <!-- main container of all the page elements -->
+	    <div id="wrapper">
+    	<!-- header of the page -->
+		<header id="header">
+			<div class="bg-dark container-fluid">
+				<div class="top-nav text-right">
+					<a target="_blank" href="mailto:muarachmann@gmail.com" class="mail">muarachmann@gmail.com |</a>
+					<a  href="tel:+237670518086" class="text-left" style="margin:60px 0 0-30px !important;color:white;">(+237)670518086</a>
+					<!-- social network of the page -->
+					<ul class="list-unstyled social-network">
+						<li><a target="_blank" href="https://www.facebook.com/mua.Rachmann"><i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/mua.Rachmann"><i class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/in/mua-rachmann-40ba5a151/"><i class="fa fa-linkedin"></i></a></li>
+						<li><a target="_blank" href="https://plus.google.com/u/1/110590356196093693388"><i class="fa fa-google-plus"></i></a></li>
+						<li><a target="_blank" href="https://medium.com/@mualaurent"><i class="fa fa-medium"></i></a></li>
+						<li><a target="_blank" href="https://github.com/muarachmann"><i class="fa fa-github"></i></a></li>
+					</ul>
+					<!-- social network of the page end -->
+				</div>
+			</div>
+			<div class="container-fluid header-holder">
+				<!-- logo of the page -->
+				<div>
+					<a class="logo" href="#">
+						<img src="/media/logo.png" class="img-responsive img-circle"  alt="Mua rachmann">
+					</a>
+					<span class="logo-title"><span class="red">Mua</span> R<span class="red">@</span>chma<span class="purple">n</span>n</span>
+				</div>
+				<!-- logo of the page end -->
+				<a href="#" class="nav-opener"><i class="fa fa-bars"></i></a>
+				<!-- main nav of the page -->
+				<nav id="nav">
+					<ul class="list-unstyled">
+						<li><a class="smooth" href="#wrapper">home</a></li>
+						<li><a class="smooth" href="#about">about</a></li>
+						<li><a class="smooth" href="#features">features</a></li>
+						<li><a class="smooth" href="#works">works</a></li>
+						<li><a class="smooth" href="#blog">blog</a></li>
+						<li><a class="smooth" href="/contact">contact</a></li>
+					</ul>
+				</nav>
+				<!-- main nav of the page end -->
+			</div>
+		</header>
+		<!-- header of the page end -->
+
+    <!-- main of the page -->
+		<main id="main">
+
+            {% block content %}
+
+                {# block to place the main content #}
+
+            {% endblock %}
+
+        </main>
+
+        </div>
+            <!-- wrapper page end -->
+</body>
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+	<!-- include jQuery -->
+	<script src="{% static 'js/plugins.js' %}"></script>
+	<!-- include jQuery -->
+	<script src="{% static 'js/jquery.main.js' %}"></script>
+	<script type="text/javascript" defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuYrTpyrSuM32JCjwsk7lHAYGE7UoKbK0"></script>
+
+
+</html>
